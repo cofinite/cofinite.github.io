@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Elden Ring Save Splicer</title>
+        <link rel="icon" href="icon.png" />
+        <link rel="stylesheet" href="main.css" />
+        <script src="spark-md5.js" defer></script>
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <div id="main" class="vertical">
+            <h1>Elden Ring Save Splicer</h1>
+            <div class="vertical">
+                <div class="horizontal">
+                    <div class="vertical">
+                        <div class="files">
+                            <input type="file" id="lhs-file" accept=".sl2" />
+                            <input type="button" id="lhs-load" value="Import" />
+                            <input type="button" id="lhs-save" value="Export" />
+                            <input type="text" id="lhs-name" />
+                        </div>
+                        <select id="lhs-list" size="10">
+                            <option>[EMPTY]</option>
+                            <option>[EMPTY]</option>
+                            <option>[EMPTY]</option>
+                            <option>[EMPTY]</option>
+                            <option>[EMPTY]</option>
+                            <option>[EMPTY]</option>
+                            <option>[EMPTY]</option>
+                            <option>[EMPTY]</option>
+                            <option>[EMPTY]</option>
+                            <option>[EMPTY]</option>
+                        </select>
+                    </div>
+                    <div class="vertical">
+                        <input type="button" id="shr" value="→" />
+                        <input type="button" id="shl" value="←" />
+                    </div>
+                    <div class="vertical">
+                        <div class="files">
+                            <input type="file" id="rhs-file" accept=".sl2" />
+                            <input type="button" id="rhs-load" value="Import" />
+                            <input type="button" id="rhs-save" value="Export" />
+                            <input type="text" id="rhs-name" />
+                        </div>
+                        <select id="rhs-list" size="10">
+                            <option>[EMPTY]</option>
+                            <option>[EMPTY]</option>
+                            <option>[EMPTY]</option>
+                            <option>[EMPTY]</option>
+                            <option>[EMPTY]</option>
+                            <option>[EMPTY]</option>
+                            <option>[EMPTY]</option>
+                            <option>[EMPTY]</option>
+                            <option>[EMPTY]</option>
+                            <option>[EMPTY]</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="log"></div>
+            </div>
+        </div>
+    </body>
+</html>
