@@ -108,7 +108,7 @@ function shiftListener(sh, a, b) {
                     dst.characterSlot = src.characterSlot.slice();
                     dst.characterName = src.characterName.slice();
                     dst.characterLevel = src.characterLevel.slice();
-                    dst.characterBool = true;
+                    dst.characterBool = (dst.characterName.length > 0? true : false);
                     dst.innerText = formatName(
                         dst.characterName,
                         dst.characterLevel,
