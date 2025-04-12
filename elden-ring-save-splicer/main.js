@@ -40,6 +40,11 @@ class SaveSplicer {
             file.click();
         });
         save.addEventListener("click", (e) => {
+            if (!this.data) {
+                log("No save file open on this side.");
+                return;
+            }
+            
             let slots = new Array(10);
             let infos = new Array(10);
             let bools = new Array(10);
@@ -121,7 +126,7 @@ function shiftListener(sh, a, b) {
                 log("No source character slot selected.");
             }
         } else {
-            log("Both sides need to have a save file open. (You may import the same file twice.)");
+            log("Both sides need to have a save file open. (You may import the same file on both sides.)");
         }
     });
 }
